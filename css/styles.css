@@ -17,6 +17,35 @@ ul {
   margin-bottom: 0;
 }
 body {
+  background-color: #333;
   margin: 0;
   font-family: sans-serif;
+}
+
+.box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  top: 125%;
+  left: -130;
+  width: 100px;
+  height: 100px;
+  background-color: greenyellow;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: 250%;
+  left: 260%;
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
 }
